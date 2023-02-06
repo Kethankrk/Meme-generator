@@ -5,9 +5,120 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(240, 240, 240);
+}
+*{
+  padding: 0;
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar{
+  display: flex;
+  background-color: blueviolet;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+  color: white;
+}
+
+.forLogo{
+  display: flex;
+  align-items: center;
+}
+.nav-img{
+  height: 30px;
+  margin-right: 10px;
+}
+.nav-logo-text{
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-shadow: -1px 0px black, 1px 0px black, 0px 1px black, 0px -1px black;
+}
+.nav-detail{
+  font-weight: 700;
+}
+
+
+.form{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+.input-btn{
+  grid-column: -1/1;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+}
+.input-field{
+  padding: 8px;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.for-meme-img{
+  width: 500px;
+  height: fit-content;
+  margin-inline: auto;
+  margin-top: 60px;
+  position: relative;
+}
+.meme-img{
+  width: 100%;
+}
+.meme-top-text{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  top: 20px;
+  text-align: center;
+}
+.meme-bottom-text{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  bottom: 20px;
+  text-align: center;
+}
+
+.meme-text{
+  font-size: 42px;
+  max-width: 400px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: -2px 0px 3px black, 2px 0px 3px black, 0px 2px 3px black, 0px -2px 3px black;
+}
+
+
+@media only screen and (max-width: 800px){
+  .form{
+    display: grid;
+    grid-template-columns: 170px 170px;
+    gap: 20px;
+  } 
+  .for-meme-img{
+    width: 350px;
+  }
+  .navbar{
+    padding: 10px 20px;
+  }
+  .nav-logo-text{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .nav-detail{
+    font-size: 12px;
+  }
 }
